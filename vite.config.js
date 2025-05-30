@@ -9,6 +9,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/escuadron-eevee-checklist/',
   plugins: [
     react(),
     tailwindcss()
