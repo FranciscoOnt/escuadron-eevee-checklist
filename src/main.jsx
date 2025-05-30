@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/escuadron-eevee-checklist'>
     <Routes>
       <Route path="/" element={<InteractiveApp />} />
       <Route path="/hoja" element={<PrintableApp />} />
