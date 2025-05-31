@@ -19,28 +19,28 @@ export const eventData = {
                 footNote: "* Solo Sábado"
             },
             {
-                name: "Pikachu Elegante Rojo",
+                name: "Pikachu Elegante (Rojo)",
                 image: "https://lh3.googleusercontent.com/j6j9i31NDdLTJ2O5W_a8m5ZGIRyVxahfQXTpFAqEs2rhS1XS5XA_mqCIR9wwsI2f5bS7XMLOBiNnJLSDVK0-6c7Kx2ISzJ49Lpk",
                 borderColor: borderColor.red,
                 bigBox: false,
                 footNote: ""
             },
             {
-                name: "Pikachu Elegante Azul",
+                name: "Pikachu Elegante (Azul)",
                 image: "https://lh3.googleusercontent.com/Xqr1nKb-cPWaeOT79KmV9ZrlaNBg9KZUyG9XCFhYLO3HhOSDZfA50p15anQfs5qwuD603XAvVcu9qPbv_fNIW4MJbxJ1WlbO78w",
                 borderColor: borderColor.lightBlue,
                 bigBox: false,
                 footNote: ""
             },
             {
-                name: "Pikachu Elegante Amarillo",
+                name: "Pikachu Elegante (Amarillo)",
                 image: "https://lh3.googleusercontent.com/en74QJPSz7O0f0HewRMTpjQsYkNkfTz8cTrtZCTeHj-20sanuNTUh07TQrqNvQHbG9FoL50qY_KuupuVzla-n-i7X8ZwO7wxr0c",
                 borderColor: borderColor.yellow,
                 bigBox: false,
                 footNote: ""
             },
             {
-                name: "Falinks Tren",
+                name: "Falinks Conductor",
                 image: "https://lh3.googleusercontent.com/FT240_xEqWqCSIkc-GvUvYv-N22F0c9EWO73PWEpPL33IN_eG5E_eFSoVLjSeomYPbnRiHOkCm6bzuuWhiShk9svd2c2jT0HZRY",
                 borderColor: borderColor.yellow,
                 bigBox: false,
@@ -68,57 +68,57 @@ export const eventData = {
         */
         eventHabitats: [
             {
-                name: "incienso",
+                name: "Encuentros por Incienso",
                 icon: "incense",
                 borderColor: borderColor.black,
                 size: "col-span-3",
                 spawns: [
                     {
-                        name: "UnownD",
+                        name: "Unown D",
                         image: "https://img.pokemondb.net/sprites/home/shiny/unown-d.png",
                         footNote: "D"
                     },
                     {
-                        name: "UnownS",
+                        name: "Unown S",
                         image: "https://img.pokemondb.net/sprites/home/shiny/unown-s.png",
                         spaceAfter: true,
                         sideNote: "*Sábado*",
                         footNote: "S"
                     },
                     {
-                        name: "UnownE",
+                        name: "Unown E",
                         image: "https://img.pokemondb.net/sprites/home/shiny/unown-e.png",
                         footNote: "E"
                     },
                     {
-                        name: "UnownH",
+                        name: "Unown H",
                         image: "https://img.pokemondb.net/sprites/home/shiny/unown-h.png",
                         footNote: "H"
                     },
                     {
-                        name: "UnownI",
+                        name: "Unown I",
                         image: "https://img.pokemondb.net/sprites/home/shiny/unown-i.png",
                         footNote: "I"
                     },
                     {
-                        name: "UnownL",
+                        name: "Unown L",
                         image: "https://img.pokemondb.net/sprites/home/shiny/unown-l.png",
                         spaceAfter: true,
                         sideNote: "*Domingo*",
                         footNote: "L"
                     },
                     {
-                        name: "UnownO",
+                        name: "Unown O",
                         image: "https://img.pokemondb.net/sprites/home/shiny/unown-o.png",
                         footNote: "O"
                     },
                     {
-                        name: "UnownR",
+                        name: "Unown R",
                         image: "https://img.pokemondb.net/sprites/home/shiny/unown-r.png",
                         footNote: "R"
                     },
                     {
-                        name: "UnownW",
+                        name: "Unown W",
                         image: "https://img.pokemondb.net/sprites/home/shiny/unown-w.png",
                         footNote: "W"
                     },
@@ -131,7 +131,7 @@ export const eventData = {
                 size: "col-span-6",
                 spawns: [
                     {
-                        name: "Flabébé-r",
+                        name: "Flabébé (Flor Roja)",
                         image: "https://img.pokemondb.net/sprites/home/shiny/2x/flabebe.jpg",
                     },
                     {
@@ -184,7 +184,7 @@ export const eventData = {
                 size: "col-span-6",
                 spawns: [
                     {
-                        name: "Flabébé-y",
+                        name: "Flabébé (Flor Amarilla)",
                         image: "https://img.pokemondb.net/sprites/home/shiny/1x/flabebe-yellow.png",
                     },
                     {
@@ -237,7 +237,7 @@ export const eventData = {
                 size: "col-span-6",
                 spawns: [
                     {
-                        name: "Flabébé-b",
+                        name: "Flabébé (Flor Azul)",
                         image: "https://img.pokemondb.net/sprites/home/shiny/flabebe-blue.png",
                     },
                     {
@@ -290,14 +290,14 @@ export const eventData = {
                 size: "col-span-6",
                 spawns: [
                     {
-                        name: "Flabébé-o",
+                        name: "Flabébé (Flor Naranja)",
                         image: "https://img.pokemondb.net/sprites/home/shiny/flabebe-orange.png",
                     },
                     {
                         name: "Togetic",
                         image: "https://img.pokemondb.net/sprites/home/shiny/2x/togetic.jpg",
                     },
-                    
+
                     {
                         name: "Clefairy",
                         image: "https://img.pokemondb.net/sprites/home/shiny/2x/clefairy.jpg",
@@ -334,7 +334,7 @@ export const eventData = {
                 ]
             },
             {
-                name: "Sabado",
+                name: "Solo el Sábado",
                 icon: "timed",
                 borderColor: borderColor.magenta,
                 annotation: "Solo Sábado",
@@ -383,7 +383,7 @@ export const eventData = {
                 ]
             },
             {
-                name: "Domingo",
+                name: "Solo el Domingo",
                 icon: "timed",
                 borderColor: borderColor.cyan,
                 annotation: "Solo Domingo",
