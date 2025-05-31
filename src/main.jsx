@@ -7,11 +7,11 @@ import { HashRouter, Routes, Route } from "react-router";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter basename='/escuadron-eevee-checklist'>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<InteractiveApp />} />
         <Route path="/hoja" element={<PrintableApp />} />
       </Routes>
-    </HashRouter >
+    </HashRouter>
   </StrictMode>,
 )

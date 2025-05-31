@@ -69,7 +69,7 @@ export const eventData = {
         eventHabitats: [
             {
                 name: "incienso",
-                icon: "incense.png",
+                icon: "incense",
                 borderColor: borderColor.black,
                 size: "col-span-3",
                 spawns: [
@@ -335,7 +335,7 @@ export const eventData = {
             },
             {
                 name: "Sabado",
-                icon: "calendar.svg",
+                icon: "timed",
                 borderColor: borderColor.magenta,
                 annotation: "Solo Sábado",
                 size: "col-span-6",
@@ -384,7 +384,7 @@ export const eventData = {
             },
             {
                 name: "Domingo",
-                icon: "calendar.svg",
+                icon: "timed",
                 borderColor: borderColor.cyan,
                 annotation: "Solo Domingo",
                 size: "col-span-6",

@@ -1,3 +1,8 @@
+import campfireLogo from "../../../public/campfire.png"
+import pogoGdlLogo from "../../../public/pogo_gdl.png"
+import eeveeLogo from "../../../public/logo-eevee.png"
+import catColorLogo from "../../../public/cat_color.png"
+
 function PrintableHeader() {
     return (
         <div className={`col-span-6 flex flex-row w-full gap-1 mt-8 p-1`}>
@@ -6,10 +11,10 @@ function PrintableHeader() {
                 <div className="border-b-1 flex-grow" />
             </div >
             <div className={`grid grid-flow-col basis-2/5 content-end justify-end cw-full gap-1 p-1`}>
-                <img src="campfire.png" className="h-10 aspect-auto"/>
-                <img src="pogo_gdl.png" className="h-10 aspect-auto"/>
-                <img src="logo-eevee.png" className="h-10 aspect-auto"/>
-                <img src="cat_color.png" className="h-10 aspect-auto"/>
+                <img src={campfireLogo} className="h-10 aspect-auto" />
+                <img src={pogoGdlLogo} className="h-10 aspect-auto" />
+                <img src={eeveeLogo} className="h-10 aspect-auto" />
+                <img src={catColorLogo} className="h-10 aspect-auto" />
             </div >
         </div >
     );

@@ -8,7 +8,8 @@ function InteractiveApp() {
 
   return (
     <div className='grid grid-cols-6  gap-2 px-16 bg-white overflow-clip'>
-      <p className='col-span-6'>Hoja ineteractiva</p>
+      <p className='col-span-6'>Hoja interactiva</p>
+      <a href='#hoja'><p className='col-span-6'>Hoja para Impresión</p></a>
     </div>
   )
 }
