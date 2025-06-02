@@ -1,5 +1,5 @@
 import Card from "./card";
-import incenseLogo from "../../../../public/incense.png"
+import incenseLogo from "../../../../public/incense.webp"
 import calendarLogo from "../../../../public/calendar.svg"
 
 function HabitatSection({ data } = props) {

@@ -10,10 +10,10 @@ import {
     NavbarMenuItem,
     Link,
 } from "@heroui/react";
+import SendButton from './sendButton';
 
-function Header() {
+function Header({ player = "dev", checks } = props) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
 
     return (
         <Navbar onMenuOpenChange={setIsMenuOpen} isBordered className='mb-4'>
@@ -34,6 +34,9 @@ function Header() {
                     >
                         Version Imprimible
                     </Link>
+                </NavbarMenuItem>
+                <NavbarMenuItem key="send">
+                    <SendButton checks={checks} player={player} />
                 </NavbarMenuItem>
             </NavbarMenu>
         </Navbar>
