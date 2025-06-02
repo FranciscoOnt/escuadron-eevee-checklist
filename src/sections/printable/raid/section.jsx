@@ -1,5 +1,5 @@
 import RaidBossCard from "./bossCard"
-import raidLogo from "../../../../public/raid.png"
+import raidLogo from "../../../assets/raid.png"
 
 function RaidBossesSection({ data } = props) {
     return (

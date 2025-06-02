@@ -1,7 +1,7 @@
-import campfireLogo from "../../../public/campfire.png"
-import pogoGdlLogo from "../../../public/pogo_gdl.png"
-import eeveeLogo from "../../../public/logo-eevee.png"
-import catColorLogo from "../../../public/cat_color.png"
+import campfireLogo from "../../assets/campfire.png"
+import pogoGdlLogo from "../../assets/pogo_gdl.png"
+import eeveeLogo from "../../assets/logo-eevee.png"
+import catColorLogo from "../../assets/cat_color.png"
 
 function PrintableHeader() {
     return (

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import RaidBossesSection from './sections/printable/raid/section'
 import { fest2025 } from './eventData'
 import HabitatSection from './sections/printable/habitat/section';
@@ -12,7 +11,7 @@ function PrintableApp() {
       <PrintableHeader />
       <p className='col-span-6 text-sm w-full border-b-1 border-gray-200 pb-4 -mx-2'>No olvides hacer Check-In en Campfire para obtener recompenzas adicionales durante el evento!</p>
       <RaidBossesSection data={eventData.sections.featuredRaidBosses} />
-      {eventData.sections.eventHabitats.map((habitat) => (<HabitatSection key={habitat.name} data={habitat}/>))}
+      {eventData.sections.eventHabitats.map((habitat) => (<HabitatSection key={habitat.name} data={habitat} />))}
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import Card from "./card";
-import incenseLogo from "../../../../public/incense.webp"
-import calendarLogo from "../../../../public/calendar.svg"
+import incenseLogo from "../../../assets/incense.webp"
+import calendarLogo from "../../../assets/calendar.svg"
 
 function HabitatSection({ data } = props) {
     let useIcon = null;

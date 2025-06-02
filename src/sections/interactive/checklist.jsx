@@ -1,7 +1,8 @@
 import { Accordion, AccordionItem } from "@heroui/react";
 import ChecklistCard from "./checklistCard";
-import incenseLogo from "../../../public/incense.webp"
-import calendarLogo from "../../../public/calendar.svg"
+import incenseLogo from "../../assets/incense.webp"
+import calendarLogo from "../../assets/calendar.svg"
+import raidLogo from "../../assets/raid.png"
 
 function Checklist({ featuredRaidBosses, eventHabitats, checks, checkCard }) {
     const bossProgress = Object.keys(checks).filter((check) => featuredRaidBosses.flatMap((boss) => boss.name).includes(check) && checks[check] == true).length
@@ -15,7 +16,8 @@ function Checklist({ featuredRaidBosses, eventHabitats, checks, checkCard }) {
                         {bossProgress >= featuredRaidBosses.length ? "Completado!" : `${bossProgress} / ${featuredRaidBosses.length}`}
                     </span>
                 </p>
-            }>
+            }
+                startContent={<img src={raidLogo} className="size-8 object-scale-down mix-blend-multiply" />}>
                 <div className="size-full grid grid-cols-3 gap-2 my-4">
                     {featuredRaidBosses.map((boss) => <ChecklistCard key={boss.name} {...boss} checks={checks} checkCard={checkCard} />)}
                 </div>
@@ -23,17 +25,17 @@ function Checklist({ featuredRaidBosses, eventHabitats, checks, checkCard }) {
             {eventHabitats.map((habitat, index) => {
                 const habitatProgress = Object.keys(checks).filter((check) => habitat.spawns.flatMap((pkmn) => pkmn.name).includes(check) && checks[check] == true).length
                 let useIcon = null;
-                    switch(habitat.icon){
-                        case "incense":
-                            useIcon = incenseLogo;
-                            break;
-                        case "timed":
-                            useIcon = calendarLogo;
-                            break;
-                        default:
-                            useIcon = habitat.icon;
-                            break;
-                    }
+                switch (habitat.icon) {
+                    case "incense":
+                        useIcon = incenseLogo;
+                        break;
+                    case "timed":
+                        useIcon = calendarLogo;
+                        break;
+                    default:
+                        useIcon = habitat.icon;
+                        break;
+                }
 
                 return (
                     <AccordionItem key={index + 1} aria-label={habitat.name} title={
@@ -44,7 +46,7 @@ function Checklist({ featuredRaidBosses, eventHabitats, checks, checkCard }) {
                             </span>
                         </p>
                     }
-                    startContent={ <img src={useIcon} className="size-8 object-scale-down mix-blend-multiply" />}>
+                        startContent={<img src={useIcon} className="size-8 object-scale-down mix-blend-multiply" />}>
                         <div className="size-full grid grid-cols-3 gap-2 my-4">
                             {habitat.spawns.map((pokemon) => <ChecklistCard key={pokemon.name} {...pokemon} checks={checks} checkCard={checkCard} />)}
                         </div>

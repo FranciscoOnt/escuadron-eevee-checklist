@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import eeveeLogo from "../../../public/logo-eevee.png"
+import eeveeLogo from "../../assets/logo-eevee.png"
 
 import {
     Navbar,
