@@ -46,7 +46,6 @@ function InteractiveApp() {
       })
     });
 
-    console.log("Gathered Data =>", checkData)
     setChecks(checkData);
   }, [eventData])
 
@@ -57,13 +56,14 @@ function InteractiveApp() {
       <div className='flex flex-col size-full p-2 gap-4'>
         <ProgressCard
           checked={Object.values(checks).filter(value => value).length}
+          checks={checks}
           total={Object.keys(checks).length}
           player={playerName}
           updatePlayer={updatePlayer}
         />
         <Checklist {...eventData.sections} checks={checks} checkCard={checkCard} />
         <Footer checks={checks} player={playerName} />
-        <div className='h-16' />
+        <div className='h-8' />
       </div>
 
     </div>

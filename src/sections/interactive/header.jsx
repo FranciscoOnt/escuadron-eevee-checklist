@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import eeveeLogo from "../../assets/logo-eevee.png"
+import printableDoc from "../../../public/impresion.pdf?url"
 
 import {
     Navbar,
@@ -10,7 +11,6 @@ import {
     NavbarMenuItem,
     Link,
 } from "@heroui/react";
-import SendButton from './sendButton';
 
 function Header({ player = "dev", checks } = props) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,14 +29,11 @@ function Header({ player = "dev", checks } = props) {
                     <Link
                         className="w-full"
                         color="primary"
-                        href="#hoja"
+                        href={printableDoc}
                         size="lg"
                     >
-                        Version Imprimible
+                        Version para Imprimir
                     </Link>
-                </NavbarMenuItem>
-                <NavbarMenuItem key="send">
-                    <SendButton checks={checks} player={player} />
                 </NavbarMenuItem>
             </NavbarMenu>
         </Navbar>
