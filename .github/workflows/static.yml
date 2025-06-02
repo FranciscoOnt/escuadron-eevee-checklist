@@ -39,6 +39,8 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+        env:
+          VITE_GOOGLE_SCRIPT_MACRO_ID: ${{ vars.VITE_GOOGLE_SCRIPT_MACRO_ID }}
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
